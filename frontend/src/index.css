@@ -1,0 +1,307 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+
+body{ background:rgb(234, 234, 237);}
+.header {
+  background-color:#6f95a5;
+  /* text-align: center;   */
+  padding: 0px;
+ 
+}
+
+.navbar {
+  margin-right: 20px;
+  padding-right: 100px;
+  list-style-type:none;
+  display:flex; 
+  
+}
+
+.navbar a {
+  text-decoration:solid;
+  color: black;
+  padding: 10px;
+  margin-right: 20px; 
+  
+
+
+} 
+.navbar a {
+  font-size: 15px; /* Increase font size */
+  padding: 15px 40px; /* Increase padding: top/bottom, right/left */
+  text-decoration: none;
+  color: black;
+  margin-right: 7px; /* Adjust the margin as needed */
+} 
+.navbar1 {display:flex ;
+align-items:center;}
+
+main {
+  padding: 2px;
+  text-align: center;
+}
+
+main h1 {
+  margin-bottom: 20px;
+}
+
+main p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+
+.footer {
+  /* background-color: #7888da; */
+  color: rgb(20, 20, 20);
+  text-align: center;
+  padding: 10px 0;
+  
+  bottom: 0;
+  width: 100%;
+  z-index: 100; /* Assurez-vous que le pied de page est en premier plan */
+}
+.main-content {
+  margin-bottom: 50px; /* Réduisez la marge inférieure pour éviter le chevauchement */ 
+  background-color: rgb(245, 238, 238);
+}
+
+
+/* Style des posts */
+.blog-post {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #e5e1e1;
+  border-radius: 5px; 
+  background-color: white;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 16px;
+}
+
+/* Style des boutons */
+.post-buttons {
+  margin-top: 10px;
+}
+
+.post-buttons button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.post-buttons button.edit-btn {
+  background-color: #646365;
+  color: #fff;
+} 
+.post-buttons button.edit-btn:hover {
+  background-color: #5f1b6e;
+}
+
+.post-buttons button.delete-btn {
+  background-color: #646365;
+  color: #fff; 
+} 
+.post-buttons button.delete-btn:hover {
+  background-color: #5f1b6e;
+}
+
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.blog-post { 
+  background-color:rgba(201, 164, 245, 0.566) ;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.post-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.post-description {
+  font-size: 16px;
+  color: #f4eeee;
+}
+ 
+.new-post-title, .new-post-description {
+  display:flex;
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 50px;
+  box-sizing:border-box;
+  border-radius: 4px;
+  border: 2px solid rgb(24, 24, 24);
+}
+.new-post-title{  padding: 10px;}
+ 
+.new-post-title::placeholder, .new-post-description::placeholder {
+  color: #ede0e0;
+}
+
+.add-post-btn {
+  background-color: #646365;
+  color: white;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+   
+  
+  
+}
+
+.add-post-btn:hover {
+  background-color: #213953;
+}
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f3eeee;
+  border-radius: 50px;
+}
+
+.submit-button { 
+
+  width: 40%;
+  padding: 10px ;
+  background-color:    #418157;;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+  border-radius: 50px;  
+  align-items:center;
+}
+
+.submit-button:hover {
+  background-color: #314e3b;
+} 
+.theme-toggle-button {
+  background-color: #367d7d;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  
+}
+
+
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 300px de largeur minimale pour chaque colonne */
+  grid-gap: 20px; /* Espace entre chaque élément de la grille */
+}
+
+.blog-post {
+  border: 1px solid rgb(227, 242, 233); /* Ajoute une bordure autour de chaque post */
+  padding: 20px; /* Ajoute un espace intérieur autour de chaque post */
+}
+/* Remove background color from main content and set it to white */
+.main-content {
+  padding: 20px;
+  text-align: center;
+  background-color: transparent; /* Remove the background color */
+}
+
+/* Rest of your CSS styles */
+.blog-post { 
+  background-color:rgba(108, 107, 110, 0.566) ;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.post-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.post-description {
+  font-size: 16px;
+  color: #f8f5f5;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 300px de largeur minimale pour chaque colonne */
+  grid-gap: 20px; /* Espace entre chaque élément de la grille */
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+
+/* pop */
+
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  margin-top: 10px;
+}
